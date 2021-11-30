@@ -9,9 +9,7 @@ Los objetivos de esta práctica son que el alumnado:
 * Conozca la herramienta Doxygen
 * Incluya en sus programas comentarios adecuados en el formato requerido por Doxygen
 * Profundice en el uso de funciones en sus programas.
-* Utilice estructuras de datos simples: vectores (std::vector, std::array) y cadenas de caracteres (string).
-* Aloje todo el código fuente de sus programas en repositorios privados de GitHub
-* Sepa depurar sus programas usando la interfaz de depuración del VSC
+* Profundice sus conocimientos sobre depuración.
 
 ### Rúbrica de evaluacion de esta práctica
 Todo el código que se presente a evaluación ha de cumplir los estándares definidos en la 
@@ -22,9 +20,7 @@ El alumnado ha de acreditar que:
 
 * Conoce los conceptos expuestos en el material de referencia de esta práctica.
 * Ha realizado todos los ejercicios propuestos, así como que es capaz de desarrollar otros de complejidad similar.
-* El código que presenta para su evaluación está alojado en un repositorio privado de GitHub.
 * Todas las prácticas realizadas hasta la fecha se encuentran alojadas en repositorios de GitHub.
-* Dispone de una cuenta en la plataforma [Jutge](https://jutge.org/) y es capaz de auto-evaluar un programa en esa plataforma.
 * Sus programas se compilan correctamente utilizando la utilidad `make` y un fichero `Makefile`.
 * Todos los identificadores que utilice en su programa (constantes, variables, etc.) deberán ser
   siempre significativos. No utilice nunca identificadores de una única letra, tal vez con la excepción de las
@@ -43,12 +39,12 @@ El alumnado ha de acreditar que:
 [Doxygen](https://en.wikipedia.org/wiki/Doxygen)
 es una herramienta de código abierto que permite generar documentación de referencia para proyectos de
 desarrollo software. 
-La documentación está escrita en el propio código fuente de los programas, y por lo tanto es relativamente 
+Una ventaja de Doxygen es que la documentación está escrita en el propio código fuente de los programas, y por lo tanto es relativamente 
 fácil de mantener actualizada. 
 Doxygen puede hacer referencias cruzadas entre la documentación y el código, de modo que el lector 
 de un documento puede referirse fácilmente al código fuente.
-La herramienta extrae la documentación de los comentarios de los ficheros de código fuente
-y puede generar la salida en diferentes formatos entre los cuales están HTML, PDF LaTeX o páginas man de Unix.
+La herramienta extrae la documentación de los comentarios presentes en los ficheros de código fuente
+y puede generar la salida en diferentes formatos entre los cuales están HTML, PDF, LaTeX o páginas `man` de Unix.
 
 En esta asignatura no se propone un uso exhaustivo de Doxygen pero sí se promueve que la
 documentación de los programas desarrollados se realice en el formato reconocido por Doxygen, que se ha
@@ -67,7 +63,7 @@ $ sudo apt install texlive-latex-extra
 Estos paquetes son necesarios para compilar ficheros en formato Latex.
 Más adelante en este documento se justifica la necesidad de los programas que suministran estos paquetes.
 
-En el [manual de Doxygen](https://www.doxygen.nl/manual/starting.html) indica cómo comenzar a trabajar con la
+En el [manual de Doxygen](https://www.doxygen.nl/manual/starting.html) se indica cómo comenzar a trabajar con la
 herramienta.
 Si, ubicados en un directorio de trabajo se invoca `doxygen`:
 ```
