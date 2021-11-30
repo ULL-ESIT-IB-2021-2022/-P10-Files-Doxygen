@@ -149,7 +149,8 @@ o
 permitidas en Doxygen.
 
 
-Así el bloque de comentarios que debe preceder a cualquier función (o método) tendrá la siguiente apariencia:
+Así el bloque de comentarios que debe preceder a cualquier función (o método) tendrá una apariencia similar a
+esta:
 ```
 /**
  * Sum numbers in a vector.
@@ -175,7 +176,6 @@ El siguiente es un ejemplo (plantilla) de comentario de bloque que debería incl
   * Grado en Ingeniería Informática
   * Informática Básica
   *
-  * @file fibonacci_main.cc
   * @author F. de Sande fsande@ull.es
   * @date 23 Jun 2020
   * @brief El programa calcula la suma de todos los términos de valor par de la serie
@@ -188,19 +188,12 @@ El siguiente es un ejemplo (plantilla) de comentario de bloque que debería incl
 ```
 Todo fichero debiera contener (etiqueta `@brief`) una breve descripción del contenido del fichero.
 Si fuera necesario se incluirá a continuación una descripción más detallada.
-Obviamente el comentario específico así como el nombre del fichero debieran particularizarse para cada caso
-concreto.
+Obviamente el comentario específico debiera particularizarse para cada caso concreto.
 
 Por otra parte, estudie atentamente todo lo que se indica en el epígrafe
 [Comments](https://google.github.io/styleguide/cppguide.html#Comments)
 de la Guía de Estilo de Google y ponga en práctica todo lo que en ella se propone, usando el formato Doxygen
 para todos los comentarios que introduzca en su código fuente.
-
-
-### Repositorio de código para las prácticas de la asignatura
-### GitHub Classroom. Clonar un repositorio git 
-### Paso de parámetros por línea de comandos
-### Documentación de las funciones
 
 ### Ejercicios
 * Al realizar los ejercicios cree dentro de su repositorio de esta práctica un directorio diferente
@@ -212,9 +205,7 @@ Asigne a cada uno de esos directorios nombres significativos.
   programa principal para resolver el ejercicio en cuestión.
   * El fichero `funciones.cc` que contendrá el código (definiciones) de las funciones declaradas en el fichero
   de cabecera.
-* Modifique los nombres de los ficheros que aquí se proponen para adaptarlos al ejercicio en cuestión.
-* La compilación de los programas correspondientes a cada ejercicio se automatizará con un fichero Makefile 
-independiente para cada programa.
+  * Modifique los nombres de estos ficheros que aquí se proponen para adaptarlos al ejercicio en cuestión.
 * Desarrolle cada ejercicio de forma incremental, probando cada una de las funciones que va Ud.
 desarrollando. Utilice el depurador de VSC para corregir cualquier tipo de error semántico que se produzca en
 cualquiera de sus desarrollos.
@@ -233,10 +224,10 @@ en el fichero de texto que se le pase como parámetro.
 de la misma. Ambos ficheros serán idénticos salvo que el de salida contiene al principio de cada línea el
 número de la misma.
 
-4. Escriba un programa `my_cp` que se comporte como el comando `cp` de linux copiando un fichero de texto en
+4. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando `cp` de linux copiando un fichero de texto en
 otro.
 
-5. Escriba un programa que elimine de un fichero de texto que tomará como entrada las líneas en blanco.
+5. Escriba un programa `delete_blank_lines` que elimine de un fichero de texto que tomará como entrada las líneas en blanco.
 
 6. Escriba un programa `my_diff` que sea una versión simplificada del comando `diff` de Linux.
 Si los ficheros de texto que se comparan son ideńticos, el programa escribirá un mensaje en pantalla
@@ -244,13 +235,14 @@ indicándolo.
 Si no fuera ese el caso el programa imprimirá en pantalla las líneas de texto que son diferentes así como su
 número de línea dentro del fichero.
 
-7. Escriba un programa `rotate` que **rote** las vocales en minúscula que encuentre en el fichero que se le
-pasa como parámetro, entendiendo por **rotar** el cambio de
+7. Escriba un programa `rotate` que *rote* las vocales en minúscula que encuentre en el fichero que se le
+pasa como parámetro, entendiendo por *rotar* el cambio de
 * 'a' por 'e'
 * 'e' por 'i'
 * 'i' por 'o'
 * 'o' por 'u'
 * 'u' por 'a'
+
 De modo que un fichero de entrada que contuviera este texto:
 
 ```
@@ -270,8 +262,6 @@ ur MUC (Menchistir Unovirsoty Cumpatir).
 ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`. 
 Cada uno de esos ficheros ha de contener en líneas separadas todas las palabras del fichero pasado como
 parámetro que comiencen por la correspondiente letra.
-
-
 
 
 ## Introducción a la criptografía
@@ -300,7 +290,7 @@ Todas ellas consisten en transformar cada uno de los caracteres del fichero orig
 diferente siguiendo una determinada transformación. 
 Indicaremos dos métodos diferentes de encriptado. 
 
-# Encriptado xor (or exclusiva)
+### Encriptado xor (or exclusiva)
 El 
 [Cifrado XOR](https://es.wikipedia.org/wiki/Cifrado_XOR)
 requiere una clave secreta de encriptado/desencriptado.
@@ -344,7 +334,7 @@ puesto que la operación o exclusiva se realiza muy eficientemente en un ordenad
 Otra ventaja del método es que la operación de desencriptado consiste en hacer exactamente 
 lo mismo al texto que se ha encriptado (con la misma clave secreta, por supuesto).
 
-# Cifrado de César
+### Cifrado de César
 Como se deduce de su nombre, 
 [este método](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar)
 era usado ya en tiempos de los romanos. 
@@ -365,7 +355,7 @@ y en este caso, el valor de K a utilizar debería solicitarse al usuario para ga
 
 
 ### Ejercicio 
-1. Desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
+9. Desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
 Si el programa se ejecuta sin pasar parámetros en la línea de comandos, debemos obtener el siguiente mensaje:
 
 ```
