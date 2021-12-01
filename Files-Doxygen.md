@@ -220,7 +220,48 @@ ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`.
 Cada uno de esos ficheros ha de contener en líneas separadas todas las palabras del fichero pasado como
 parámetro que comiencen por la correspondiente letra.
 
-9. Lea la introduccción a la criptografía disponible en [este enlace](Criptografia.md). A continuación, desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
+9. Un autómata finito determinista (
+[DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+por sus siglas en inglés) es una máquina abstracta que acepta o rechaza una determinada secuencia de símbolos.
+Lea el artículo de 
+[Wikipedia](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+si quiere conocer algunos detalles sobre este modelo de cómputo, aunque ello no es estrictamente necesario.
+Escriba un programa `read_DFA` que lea un fichero de texto `input.dfa` que contiene la especificación de un
+DFA e imprima en pantalla las características del mismo.
+Los ficheros de especificación de DFAs tienen la siguiente estructura:
+* Línea 1: Número total de estados del DFA.
+* Línea 2: Estado de arranque del DFA.
+* A continuación vendrá una línea para cada uno de los estados. 
+  Cada línea contendrá los siguientes números, separados entre sí por espacios en blanco:
+  * Número identificador del estado. 
+  Los estados del autómata se representarán mediante números enteros sin signo. 
+  La numeración de los estados corresponderá a los primeros números naturales comenzando por 0.
+  * Un 1 si se trata de un estado de aceptación y un 0 si se trata de un estado de no aceptación.
+  * Número de transiciones que posee el estado.
+  * A continuación, para cada una de las transiciones, y separados por espacios en blanco, se detallará la información siguiente:
+    * Símbolo de entrada necesario para que se produzca la transición.
+    * Estado destino de la transición.
+A modo de ejemplo, el siguiente sería el contenido del fichero de especificación del DFA de la figura
+
+```
+4
+0
+0 0 2 a 1 b 3
+1 1 2 a 1 b 2
+2 1 2 a 1 b 3
+3 0 2 a 3 b 3
+```
+
+
+
+
+
+
+
+
+10. Lea esta
+[introducción a la criptografía](Criptografia.md)
+y a continuación, desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
 Si el programa se ejecuta sin pasar parámetros en la línea de comandos, debemos obtener el siguiente mensaje:
 ```
 ./cripto -- Cifrado de ficheros
