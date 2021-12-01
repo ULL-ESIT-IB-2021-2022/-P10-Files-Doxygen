@@ -175,22 +175,19 @@ cualquiera de sus desarrollos.
 * Utilice el depurador integrado de VSC para depurar los programas de modo que funcionen correctamente.
 * Todos estos programas han de tomar su entrada (si es que hay alguna) como parámetros pasados por línea de comandos.
 
-1. Escriba un programa que tome como parámetro de entrada un fichero de texto e imprima en pantalla las 3
-palabras de mayor longitud presentes en el fichero.
-
-2. Escriba un programa que imprima en pantalla la palabra con mayor número de vocales y la palabra con el
+1. Escriba un programa que imprima en pantalla la palabra con mayor número de vocales y la palabra con el
 mayor número de consonantes (independientemente de si se trata de mayúsculas o minúsculas) que se encuentren
 en el fichero de texto que se le pase como parámetro.
 
-3. Desarrolle un programa que copie un fichero de texto en otro añadiendo al principio de cada línea el número de la misma. Ambos ficheros serán idénticos salvo que el de salida contiene al principio de cada línea el número de la misma.
+2. Desarrolle un programa que copie un fichero de texto en otro añadiendo al principio de cada línea el número de la misma. Ambos ficheros serán idénticos salvo que el de salida contiene al principio de cada línea el número de la misma.
 
-4. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando 
+3. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando 
 [cp](https://ss64.com/bash/cp.html)
 de linux copiando un fichero de texto en otro.
 
-5. Escriba un programa `delete_blank_lines` que elimine de un fichero de texto que tomará como entrada las líneas en blanco.
+4. Escriba un programa `delete_blank_lines` que elimine de un fichero de texto que tomará como entrada las líneas en blanco.
 
-6. Escriba un programa `my_diff` que sea una versión simplificada del comando 
+5. Escriba un programa `my_diff` que sea una versión simplificada del comando 
 [diff](https://ss64.com/bash/diff.html) 
 de Linux.
 Si los ficheros de texto que se comparan son ideńticos, el programa escribirá un mensaje en pantalla
@@ -198,7 +195,7 @@ indicándolo.
 Si no fuera ese el caso el programa imprimirá en pantalla las líneas de texto que son diferentes así como su
 número de línea dentro del fichero.
 
-7. Escriba un programa `rotate` que *rote* las vocales en minúscula que encuentre en el fichero que se le
+6. Escriba un programa `rotate` que *rote* las vocales en minúscula que encuentre en el fichero que se le
 pasa como parámetro, entendiendo por *rotar* el cambio de
 * 'a' por 'e'
 * 'e' por 'i'
@@ -219,12 +216,12 @@ sumitomis rifirrid tu es MADM (Menchistir Aatumetoc Dogotel Mechoni)
 ur MUC (Menchistir Unovirsoty Cumpatir).
 ```
 
-8. Escriba un programa que lea un fichero de texto que se le pase como parámetro y produzca como salida
+7. Escriba un programa que lea un fichero de texto que se le pase como parámetro y produzca como salida
 ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`. 
 Cada uno de esos ficheros ha de contener en líneas separadas todas las palabras del fichero pasado como
 parámetro que comiencen por la correspondiente letra.
 
-9. Un autómata finito determinista ([DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+8. Un autómata finito determinista ([DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
 por sus siglas en inglés) es una máquina abstracta que acepta o rechaza una determinada secuencia de símbolos.
 Lea el artículo de 
 [Wikipedia](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
@@ -275,7 +272,7 @@ Es decir en las 3 primeras líneas se imprime el cardinal del conjunto de estado
 El estado de arranque (q0) y el conjunto de estados que son de aceptación (F).
 En las líneas sucesivas se imprime el valor de la función de transición (*delta*) para cada estado y símbolo.
 
-10. Lea esta
+9. Lea esta
 [introducción a la criptografía](Criptografia.md)
 y a continuación, desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
 Si el programa se ejecuta sin pasar parámetros en la línea de comandos, debemos obtener el siguiente mensaje:
@@ -306,12 +303,17 @@ El programa solo se ejecutará cuando se le hayan pasado por línea de comandos 
 En caso de detectar cualquier inconsistencia en los parámetros, el programa debe abortar su ejecución.
 Se indicará asimismo un mensaje de error si el programa no consigue abrir el fichero de entrada.
 
+10. Resuelva el problema 
+[CryptocaesarP75810](https://jutge.org/problems/P75810_en)
+de Jutge y súbalo a la plataforma para su evaluación.
+
 ### Referencias
 
 * [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-* [Cifrado XOR](https://es.wikipedia.org/wiki/Cifrado_XOR)
-* [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar)
+* [Comments](https://google.github.io/styleguide/cppguide.html#Comments)
 * [Doxygen](https://en.wikipedia.org/wiki/Doxygen)
 * [Overview of supported JavaDoc style tags](http://www.time2help.com/doc/online_help/idh_java_doc_tag_support.htm)
 * [Documenting C++ Code](https://developer.lsst.io/cpp/api-docs.html)
-* [Comments](https://google.github.io/styleguide/cppguide.html#Comments)
+* [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar)
+* [Cifrado XOR](https://es.wikipedia.org/wiki/Cifrado_XOR)
+* [DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
