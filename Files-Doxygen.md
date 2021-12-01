@@ -220,12 +220,12 @@ ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`.
 Cada uno de esos ficheros ha de contener en líneas separadas todas las palabras del fichero pasado como
 parámetro que comiencen por la correspondiente letra.
 
-9. Un autómata finito determinista (
-[DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+9. Un autómata finito determinista ([DFA](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
 por sus siglas en inglés) es una máquina abstracta que acepta o rechaza una determinada secuencia de símbolos.
 Lea el artículo de 
 [Wikipedia](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
-si quiere conocer algunos detalles sobre este modelo de cómputo, aunque ello no es estrictamente necesario.
+si quiere conocer algunos detalles sobre este modelo de cómputo, aunque ello no es estrictamente necesario
+para realizar este ejercicio.
 Escriba un programa `read_DFA` que lea un fichero de texto `input.dfa` que contiene la especificación de un
 DFA e imprima en pantalla las características del mismo.
 Los ficheros de especificación de DFAs tienen la siguiente estructura:
@@ -241,7 +241,8 @@ Los ficheros de especificación de DFAs tienen la siguiente estructura:
   * A continuación, para cada una de las transiciones, y separados por espacios en blanco, se detallará la información siguiente:
     * Símbolo de entrada necesario para que se produzca la transición.
     * Estado destino de la transición.
-A modo de ejemplo, el siguiente sería el contenido del fichero de especificación del DFA de la figura
+A modo de ejemplo, el siguiente sería el contenido del fichero de especificación del DFA de 
+[esta figura](https://raw.githubusercontent.com/ULL-ESIT-IB-2021-2022/P10-Files-Doxygen/main/dfa.png)
 
 ```
 4
@@ -251,13 +252,23 @@ A modo de ejemplo, el siguiente sería el contenido del fichero de especificaci�
 2 1 2 a 1 b 3
 3 0 2 a 3 b 3
 ```
-
-
-
-
-
-
-
+y para este fichero de entrada el programa debería imprimir en pantalla la siguiente información:
+```
+|Q| = 4
+q0 = 0
+F = {1, 2}
+delta(0, a) = 1
+delta(0, b) = 3
+delta(1, a) = 1
+delta(1, b) = 2
+delta(2, a) = 1
+delta(2, b) = 3
+delta(3, a) = 3
+delta(3, b) = 3
+```
+Es decir en las 3 primeras líneas se imprime el cardinal del conjunto de estados, 
+El estado de arranque (q0) y el conjunto de estados que son de aceptación (F).
+En las líneas sucesivas se imprime el valor de la función de transición (*delta*) para cada estado y símbolo.
 
 10. Lea esta
 [introducción a la criptografía](Criptografia.md)
