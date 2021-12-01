@@ -173,22 +173,18 @@ Asigne a cada uno de esos directorios nombres significativos.
 desarrollando. Utilice el depurador de VSC para corregir cualquier tipo de error semántico que se produzca en
 cualquiera de sus desarrollos.
 * Utilice el depurador integrado de VSC para depurar los programas de modo que funcionen correctamente.
-* Todos estos programas han de tomar su entrada (si es que hay alguna) como parámetros pasados por línea de
-* comandos.
+* Todos estos programas han de tomar su entrada (si es que hay alguna) como parámetros pasados por línea de comandos.
 
-1. Escriba un programa que tome como parámetro de entrada un fichero de texto e imprima en pantalla las tres
+1. Escriba un programa que tome como parámetro de entrada un fichero de texto e imprima en pantalla las 3
 palabras de mayor longitud presentes en el fichero.
 
 2. Escriba un programa que imprima en pantalla la palabra con mayor número de vocales y la palabra con el
 mayor número de consonantes (independientemente de si se trata de mayúsculas o minúsculas) que se encuentren
 en el fichero de texto que se le pase como parámetro.
 
-3. Desarrolle un programa que copie un fichero de texto en otro añadiendo al principio de cada línea el número
-de la misma. Ambos ficheros serán idénticos salvo que el de salida contiene al principio de cada línea el
-número de la misma.
+3. Desarrolle un programa que copie un fichero de texto en otro añadiendo al principio de cada línea el número de la misma. Ambos ficheros serán idénticos salvo que el de salida contiene al principio de cada línea el número de la misma.
 
-4. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando `cp` de linux copiando un fichero de texto en
-otro.
+4. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando `cp` de linux copiando un fichero de texto en otro.
 
 5. Escriba un programa `delete_blank_lines` que elimine de un fichero de texto que tomará como entrada las líneas en blanco.
 
@@ -207,7 +203,6 @@ pasa como parámetro, entendiendo por *rotar* el cambio de
 * 'u' por 'a'
 
 De modo que un fichero de entrada que contuviera este texto:
-
 ```
 In an age when acronyms were popular, the Manchester Mark I was
 sometimes referred to as MADM (Manchester Automatic Digital Machine)
@@ -220,14 +215,13 @@ sumitomis rifirrid tu es MADM (Menchistir Aatumetoc Dogotel Mechoni)
 ur MUC (Menchistir Unovirsoty Cumpatir).
 ```
 
-
 8. Escriba un programa que lea un fichero de texto que se le pase como parámetro y produzca como salida
 ficheros con nombre `A.txt`, `B.txt`, ..., `Z.txt`. 
 Cada uno de esos ficheros ha de contener en líneas separadas todas las palabras del fichero pasado como
 parámetro que comiencen por la correspondiente letra.
 
-
 ## Introducción a la criptografía
+
 Durante la segunda guerra mundial, el ejército alemán utilizó la máquina conocida como *Enigma*
 para codificar sus mensajes. 
 Básicamente dada una *semilla* la máquina generaba una secuencia de números pseudoaleatorios que era 
@@ -316,11 +310,10 @@ Se puede optar por hacer fijo el valor de K o bien solicitarlo al usuario.
 Evidentemente, el desencriptado del fichero consistirá en realizar la operación inversa, 
 y en este caso, el valor de K a utilizar debería solicitarse al usuario para garantizar que está autorizado a leer el fichero.
 
-
 ### Ejercicio 
+
 9. Desarrolle en C++ un programa `cripto.cc` cuya finalidad será encriptar y/o desencriptar ficheros de texto.
 Si el programa se ejecuta sin pasar parámetros en la línea de comandos, debemos obtener el siguiente mensaje:
-
 ```
 ./cripto -- Cifrado de ficheros
 Modo de uso: ./cripto fichero_entrada fichero_salida método password operación
@@ -349,6 +342,7 @@ En caso de detectar cualquier inconsistencia en los parámetros, el programa deb
 Se indicará asimismo un mensaje de error si el programa no consigue abrir el fichero de entrada.
 
 ### Referencias
+
 * [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 * [Cifrado XOR](https://es.wikipedia.org/wiki/Cifrado_XOR)
 * [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar)
@@ -356,4 +350,3 @@ Se indicará asimismo un mensaje de error si el programa no consigue abrir el fi
 * [Overview of supported JavaDoc style tags](http://www.time2help.com/doc/online_help/idh_java_doc_tag_support.htm)
 * [Documenting C++ Code](https://developer.lsst.io/cpp/api-docs.html)
 * [Comments](https://google.github.io/styleguide/cppguide.html#Comments)
-
