@@ -245,6 +245,7 @@ Los ficheros de especificación de DFAs tienen la siguiente estructura:
   * A continuación, para cada una de las transiciones, y separados por espacios en blanco, se detallará la información siguiente:
     * Símbolo de entrada necesario para que se produzca la transición.
     * Estado destino de la transición.
+
 A modo de ejemplo, el siguiente sería el contenido del fichero de especificación del DFA de 
 [esta figura](https://raw.githubusercontent.com/ULL-ESIT-IB-2021-2022/P10-Files-Doxygen/main/dfa.png)
 
