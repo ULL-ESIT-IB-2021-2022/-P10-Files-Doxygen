@@ -184,11 +184,15 @@ en el fichero de texto que se le pase como parámetro.
 
 3. Desarrolle un programa que copie un fichero de texto en otro añadiendo al principio de cada línea el número de la misma. Ambos ficheros serán idénticos salvo que el de salida contiene al principio de cada línea el número de la misma.
 
-4. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando `cp` de linux copiando un fichero de texto en otro.
+4. Escriba un programa `my_cp` que se comporte como una versión simplificada del comando 
+[cp](https://ss64.com/bash/cp.html)
+de linux copiando un fichero de texto en otro.
 
 5. Escriba un programa `delete_blank_lines` que elimine de un fichero de texto que tomará como entrada las líneas en blanco.
 
-6. Escriba un programa `my_diff` que sea una versión simplificada del comando `diff` de Linux.
+6. Escriba un programa `my_diff` que sea una versión simplificada del comando 
+[diff](https://ss64.com/bash/diff.html) 
+de Linux.
 Si los ficheros de texto que se comparan son ideńticos, el programa escribirá un mensaje en pantalla
 indicándolo.
 Si no fuera ese el caso el programa imprimirá en pantalla las líneas de texto que son diferentes así como su
