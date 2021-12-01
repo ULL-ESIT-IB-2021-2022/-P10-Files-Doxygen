@@ -4,9 +4,8 @@
 
 ### Objetivos
 Los objetivos de esta práctica son que el alumnado:
-* Desarrolle programas sencillos en C++ que utilicen ficheros, así como todas las características del lenguaje
-  estudiadas
-* Conozca la herramienta Doxygen
+* Desarrolle programas sencillos en C++ que utilicen ficheros, así como todas las características del lenguaje estudiadas
+* Conozca la herramienta [Doxygen](https://en.wikipedia.org/wiki/Doxygen)
 * Incluya en sus programas comentarios adecuados en el formato requerido por Doxygen
 * Profundice en el uso de funciones en sus programas.
 * Profundice sus conocimientos sobre depuración.
@@ -23,28 +22,21 @@ El alumnado ha de acreditar que:
 * Todas las prácticas realizadas hasta la fecha se encuentran alojadas en repositorios de GitHub.
 * Sus programas se compilan correctamente utilizando la utilidad `make` y un fichero `Makefile`.
 * Todos los identificadores que utilice en su programa (constantes, variables, etc.) deberán ser
-  siempre significativos. No utilice nunca identificadores de una única letra, tal vez con la excepción de las
-  variables que utilice para iterar en un bucle.
+  siempre significativos. No utilice nunca identificadores de una única letra, tal vez con la excepción de las variables que utilice para iterar en un bucle.
 * Sabe editar y modificar sus programas usando VSC con una conexión remota a la máquina virtual Linux de la asignatura.
-* Ha realizado todos sus ejercicios en la Máquina Virtual Ubuntu de la asignatura.
-* Todos los programas que desarrolla, antes de su ejecución imprimen en pantalla un
-  mensaje indicando la finalidad del programa así como la información que precisará del usuario para su correcta ejecución.
-* Conoce 
+* Ha realizado todos sus ejercicios en la máquina virtual Ubuntu de la asignatura.
+* Todos los programas que desarrolla, antes de su ejecución imprimen en pantalla un mensaje indicando la finalidad del programa así como la información que precisará del usuario para su correcta ejecución.
 * Todos sus programas contienen comentarios adecuados en el formato requerido por Doxygen.
 * Todos los ficheros de código del proyecto correspondiente a esta práctica están alojados en un repositorio
   de GitHub
 * Conoce las técnicas básicas de depuración usando VSC y su depurador integrado.
 
 ### Documentación de código. Doxygen
-[Doxygen](https://en.wikipedia.org/wiki/Doxygen)
-es una herramienta de código abierto que permite generar documentación de referencia para proyectos de
-desarrollo software. 
-Una ventaja de Doxygen es que la documentación está escrita en el propio código fuente de los programas, y por lo tanto es relativamente 
-fácil de mantener actualizada. 
-Doxygen puede hacer referencias cruzadas entre la documentación y el código, de modo que el lector 
-de un documento puede referirse fácilmente al código fuente.
-La herramienta extrae la documentación de los comentarios presentes en los ficheros de código fuente
-y puede generar la salida en diferentes formatos entre los cuales están HTML, PDF, LaTeX o páginas `man` de Unix.
+
+[Doxygen](https://en.wikipedia.org/wiki/Doxygen) es una herramienta de código abierto que permite generar documentación de referencia para proyectos de desarrollo software. 
+Una ventaja de Doxygen es que la documentación está escrita en el propio código fuente de los programas, y por lo tanto es relativamente fácil de mantener actualizada. 
+Doxygen puede hacer referencias cruzadas entre la documentación y el código, de modo que el lector de un documento puede referirse fácilmente al código fuente.
+La herramienta extrae la documentación de los comentarios presentes en los ficheros de código fuente y puede generar la salida en diferentes formatos entre los cuales están HTML, PDF, LaTeX o páginas `man` de Unix.
 
 En esta asignatura no se propone un uso exhaustivo de Doxygen pero sí se promueve que la
 documentación de los programas desarrollados se realice en el formato reconocido por Doxygen, que se ha
@@ -60,64 +52,43 @@ $ sudo apt install texlive-latex-base
 $ sudo apt install texlive-latex-recommended
 $ sudo apt install texlive-latex-extra
 ```
-Estos paquetes son necesarios para compilar ficheros en formato Latex.
+Estos paquetes son necesarios para compilar ficheros en formato [LaTeX](https://es.wikipedia.org/wiki/LaTeX).
 Más adelante en este documento se justifica la necesidad de los programas que suministran estos paquetes.
 
-En el [manual de Doxygen](https://www.doxygen.nl/manual/starting.html) se indica cómo comenzar a trabajar con la
-herramienta.
-Si, ubicados en un directorio de trabajo se invoca `doxygen`:
+En el [manual de Doxygen](https://www.doxygen.nl/manual/starting.html) se indica cómo comenzar a trabajar con la herramienta.
+Si, ubicados en un directorio de trabajo, se invoca `doxygen`:
 ```
 doxygen -g <config-file>
 ```
 
 la herramienta creará un fichero de configuración.
-Si no se le pasa el nombre del fichero como parámetro, creará un fichero con nombre `Doxyfile` preconfigurado
-para su uso.
-En el directorio de trabajo de esta práctica (`src`) se encuentra un fichero `Doxyfile` ya listo para usarse con
-proyectos de C++.
-Se ha incluído asimismo el código fuente de un programa para ilustrar con el mismo el uso de
-documentación con Doxygen.
-Si revisa Ud. el fichero `Doxyfile` (es un fichero de texto) verá toda una serie de opciones que el programa permite.
-Cada opción va precedida de una explicación de su finalidad y funcionamiento, de modo que puede Ud. probar a
-modificar algunas de ellas si lo desea.
-En [esta página](https://www.doxygen.nl/manual/config.html)
-puede consultarse la finalidad y funcionamiento de cada una de las etiquetas (Tags) que se usan en el fichero
-de configuración de Doxygen.
+Si no se le pasa el nombre del fichero como parámetro, creará un fichero con nombre `Doxyfile` preconfigurado para su uso.
+En el directorio de trabajo de esta práctica (`src`) se encuentra un fichero `Doxyfile` ya listo para usarse con proyectos de C++.
+Se ha incluído asimismo el código fuente de un programa para ilustrar con el mismo el uso de documentación con Doxygen.
+Si revisa el fichero `Doxyfile` (es un fichero de texto) verá un conjunto de opciones que el programa permite.
+Cada opción va precedida de una explicación de su finalidad y funcionamiento, de modo que puede probar a modificar algunas de ellas si lo desea.
+En [esta página](https://www.doxygen.nl/manual/config.html) puede consultarse la finalidad y funcionamiento de cada una de las etiquetas (tags) que se usan en el fichero de configuración de Doxygen.
 
-Para generar la documentación de su aplicación, colóquese en el directorio de su proyecto 
-(`src` en esta práctica) y ejecute:
+Para generar la documentación de su aplicación, colóquese en el directorio de su proyecto (`src` en esta práctica) y ejecute:
 ```
 doxygen Doxyfile
 ```
 
-Con el fichero `Doxyfile` que se suministra, la herramienta creará un subdirectorio `doc` en el directorio
-raíz de su proyecto en el que alojará toda la documentación generada.
-El directorio donde Doxygen genera su salida se especifica con la etiqueta 
-`OUTPUT_DIRECTORY` (línea 61 del fichero `Doxyfile` suministrado).
-Con la configuración suministrada se generan dos subdirectorios dentro de `doc`: `html` y `latex`.
-Si abre con un navegador el fichero `doc/html/index.html` accederá a la página principal de la documentación
-generada para el programa.
-Si se coloca en el directorio `doc/latex/` y ejecuta `make` el sistema "compila" el código latex y genera un
-fichero `refman.pdf` que contiene igualmente la documentación generada.
+Con el fichero `Doxyfile` que se suministra, la herramienta creará un subdirectorio `doc` en el directorio raíz de su proyecto en el que alojará toda la documentación generada.
+El directorio donde Doxygen genera su salida se especifica con la etiqueta `OUTPUT_DIRECTORY` (línea `61` del fichero `Doxyfile` suministrado).
+Con la configuración suministrada se generan 2 subdirectorios dentro de `doc`: `html` y `latex`.
+Si abre con un navegador el fichero `doc/html/index.html` accederá a la página principal de la documentación generada para el programa.
+Si se coloca en el directorio `doc/latex/` y ejecuta `make` el sistema "compila" el código LaTeX y genera un fichero `refman.pdf` que contiene igualmente la documentación generada.
 
-Tal como se ha indicado, HTML o latex son solo dos de los formatos que permite generar Doxygen.
-Tanto HTML como Latex (también Markdown) son lo que se conoce como 
-[lenguajes de marcas](https://es.wikipedia.org/wiki/Lenguaje_de_marcado).
+Tal como se ha indicado, HTML o LaTeX son solo 2 de los formatos que permite generar Doxygen.
+Tanto HTML como LaTeX (también [Markdown](https://es.wikipedia.org/wiki/Markdown)) son lo que se conoce como [lenguajes de marcas](https://es.wikipedia.org/wiki/Lenguaje_de_marcado).
 HTML es el lenguaje que se utiliza para componer los textos que se muestran en las páginas web.
-[Latex](https://en.wikipedia.org/wiki/LaTeX)
-es un sistema de composición de textos que cuida el formato en especial en el ámbito de la tipografía y que es
-especialmente adecuado para textos de carácter científico.
-No se pretende aquí que profundice Ud. en conocer HTML o Latex.
+[Latex](https://en.wikipedia.org/wiki/LaTeX) es un sistema de composición de textos que cuida el formato en especial en el ámbito de la tipografía y que es especialmente adecuado para textos de carácter científico.
+No se pretende aquí que profundice en conocer HTML o LaTeX.
 
-La sección 
-[Documenting the code](https://www.doxygen.nl/manual/config.html)
-del manual de Doxygen indica cómo comentar el código fuente de modo que los comentarios sean procesados por
-Doxygen para incorporarlos a la documentación generada.
+La sección [Documenting the code](https://www.doxygen.nl/manual/config.html) del manual de Doxygen indica cómo comentar el código fuente de modo que los comentarios sean procesados por Doxygen para incorporarlos a la documentación generada.
 
-La guía 
-[Documenting C++ Code](https://developer.lsst.io/cpp/api-docs.html) 
-de documentación de código del proyecto LLST es la referencia que se adoptará en la asignatura para documentar
-el código de los programas que se desarrollen.
+La guía [Documenting C++ Code](https://developer.lsst.io/cpp/api-docs.html) de documentación de código del proyecto LLST es la referencia que se adoptará en la asignatura para documentar el código de los programas que se desarrollen.
 Se utilizarán comentarios de tipo JavaDoc para comentarios de bloque:
 
 ```
@@ -125,8 +96,7 @@ Se utilizarán comentarios de tipo JavaDoc para comentarios de bloque:
  * ... text ...
  */
 ```
-[JavaDoc](https://en.wikipedia.org/wiki/Javadoc)
-es otro sistema de documentación ideado para Java y que también es muy popular.
+[JavaDoc](https://en.wikipedia.org/wiki/Javadoc) es otro sistema de documentación ideado para Java y que también es muy popular. 
 Doxygen soporta el uso de etiquetas "al estilo Javadoc" en el código.
 
 Los bloques de comentarios multi-línea deben comenzar con 
@@ -148,9 +118,7 @@ o
 ```
 permitidas en Doxygen.
 
-
-Así el bloque de comentarios que debe preceder a cualquier función (o método) tendrá una apariencia similar a
-esta:
+Así el bloque de comentarios que debe preceder a cualquier función (o método) tendrá una apariencia similar a esta:
 ```
 /**
  * Sum numbers in a vector.
@@ -163,12 +131,9 @@ double sum(std::vector<double>& const values) {
 }
 ```
 En el ejemplo anterior `@param` y `@return` son etiquetas de tipo Javadoc.
-En 
-[Overview of supported JavaDoc style tags](http://www.time2help.com/doc/online_help/idh_java_doc_tag_support.htm)
-pueden consultarse este tipo de etiquetas.
+En [Overview of supported JavaDoc style tags](http://www.time2help.com/doc/online_help/idh_java_doc_tag_support.htm) pueden consultarse este tipo de etiquetas.
 
-El siguiente es un ejemplo (plantilla) de comentario de bloque que debería incluirse al comienzo de todos los ficheros
-(*.cc, *.h) de un proyecto de programación en el ámbito de esta asignatura:
+El siguiente es un ejemplo (plantilla) de comentario de bloque que debería incluirse al comienzo de todos los ficheros (`*.cc`, `*.h`) de un proyecto de programación en el ámbito de esta asignatura:
 ```
 /**
   * Universidad de La Laguna
@@ -177,7 +142,7 @@ El siguiente es un ejemplo (plantilla) de comentario de bloque que debería incl
   * Informática Básica
   *
   * @author F. de Sande fsande@ull.es
-  * @date 23 Jun 2020
+  * @date 01 Dic 2021
   * @brief El programa calcula la suma de todos los términos de valor par de la serie
   *        de Fibonacci que sean menores que un valor dado.
   *        Cada nuevo término de la serie se genera sumando los dos anteriores.
@@ -190,12 +155,10 @@ Todo fichero debiera contener (etiqueta `@brief`) una breve descripción del con
 Si fuera necesario se incluirá a continuación una descripción más detallada.
 Obviamente el comentario específico debiera particularizarse para cada caso concreto.
 
-Por otra parte, estudie atentamente todo lo que se indica en el epígrafe
-[Comments](https://google.github.io/styleguide/cppguide.html#Comments)
-de la Guía de Estilo de Google y ponga en práctica todo lo que en ella se propone, usando el formato Doxygen
-para todos los comentarios que introduzca en su código fuente.
+Por otra parte, estudie atentamente todo lo que se indica en el epígrafe [Comments](https://google.github.io/styleguide/cppguide.html#Comments) de la Guía de Estilo de Google y ponga en práctica todo lo que en ella se propone, usando el formato Doxygen para todos los comentarios que introduzca en su código fuente.
 
 ### Ejercicios
+
 * Al realizar los ejercicios cree dentro de su repositorio de esta práctica un directorio diferente
 para cada uno de ellos.
 Asigne a cada uno de esos directorios nombres significativos.
